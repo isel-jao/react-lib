@@ -1,0 +1,11 @@
+{
+  "extends": "./tsconfig.build.json",
+  "compilerOptions": {
+    // TypeScript 7 removed `node10`/`classic` resolution, so `bundler` is what
+    // pairs with a CommonJS emit now. It also lets the ".js" extensions in our
+    // relative imports resolve back to the ".ts" sources.
+    "module": "commonjs",
+    "moduleResolution": "bundler",
+    "outDir": "dist/cjs"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  // Shared build options. Tests and the vitest setup file are excluded so they
+  // never reach dist/ — unlike a bundler, tsc compiles everything it includes.
+  "compilerOptions": {
+    "target": "es2022",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "jsx": "react-jsx",
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "esModuleInterop": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "rootDir": "src",
+    "skipLibCheck": true
+  },
+  "include": ["src"],
+  "exclude": ["src/**/*.test.ts", "src/**/*.test.tsx", "src/vitest-setup.ts"]
+}

@@ -1,0 +1,3 @@
+pnpm biome check .
+pnpm typecheck
+pnpm test

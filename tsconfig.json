@@ -1,0 +1,18 @@
+{
+  // Editor and `pnpm typecheck` config: covers everything, emits nothing.
+  // The two build configs below are the ones that produce dist/.
+  "compilerOptions": {
+    "target": "es2022",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "jsx": "react-jsx",
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "noEmit": true
+  },
+  "include": ["src", "vitest.config.ts"],
+  "exclude": ["node_modules", "dist"]
+}
